@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mymey</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+    }body {
+  animation: gradientBG 15s ease infinite;
+  background: linear-gradient(270deg, #FFD700, #1E90FF);
+  background-size: 400% 400%;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  object-fit: cover;
+}
+
+.intro {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.socials a img {
+  width: 40px;
+  height: 40px;
+  filter: invert(0%);
+  transition: transform 0.3s;
+}
+
+.socials a:hover img {
+  transform: scale(1.2);
+}
+
+.my-art {
+  margin-top: 2rem;
+}
+
+.my-art h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.art-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.art-item img {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 120px;
+  object-fit: cover;
+}
+
+.art-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+iframe.spotify {
+  margin-top: 2rem;
+  width: 100%;
+  height: 152px;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .art-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .art-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align:center">
+      <img src="Kaki.Jpg" alt="Mymey Profile Picture" class="profile-pic">
+      <h1>hello welcome to my personal website</h1>
+    </div>
+    <p class="intro">
+      Hi! I'm Mymey. I am a management graduate, I also work in law, a world full of challenges and logic. But behind that seriousness, I am still an ordinary human being who likes to eat well, likes to take naps, likes to travel to find new atmospheres, and does not refuse if asked to go shopping hahahah not that I am showing off, although this is meaningless but you read it hahaha :), for me life must be balanced: work hard, get enough rest, and make room for happiness. I am also someone who likes to watch Korean dramas hhahah. This website is a place for me to express myself, share knowledge, and connect with people who have the same interests.
+    </p>
+    <div class="socials">
+      <a href="https://www.instagram.com/mymey.29?igsh=MXd4OW50bWFpeTdxYw=="><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@mymey0429?_t=ZS-8vWn0GuAGjy&_r=1"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+      <a href="https://discord.gg/DE6DgnHrrB"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord"></a>
+      <a href="https://open.spotify.com/user/31d2oxawtl3phmnn6d77v6zdityy"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/spotify.svg" alt="Spotify"></a>
+      <a href="https://lynk.id/mymey29"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/shopify.svg" alt="My Shop"></a>
+      </div><div class="my-art">
+  <h2>My Art And Hobbies</h2>
+  <div class="art-gallery">
+    <div class="art-item">
+      <img src="J.jpg" alt="Sewing">
+      <div class="art-caption">缝纫与设计</div>
+    </div>
+    <div class="art-item">
+      <img src="Mm.jpg" alt="Cooking">
+      <div class="art-caption">煮羽毛球</div>
+    </div>
+    <div class="art-item">
+      <img src="Kk.jpg" alt="Crafting">
+      <div class="art-caption">工艺</div>
+    </div>
+    <div class="art-item">
+      <img src="Gg.jpg" alt="Gaming">
+      <div class="art-caption">游戏</div>
+    </div>
+    <div class="art-item">
+      <img src="Bb.jpg" alt="Cooking">
+      <div class="art-caption">羽毛球</div>
+    </div>
+    <div class="art-item">
+      <img src="Tt.jpg" alt="Traveling">
+      <div class="art-caption">旅游</div>
+    </div>
+  </div>
+</div>
+
+<iframe class="spotify" src="https://open.spotify.com/embed/playlist/7vrSdB7bbX7zBNMkYug1wu?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  </div>
+</body>
+</html>
